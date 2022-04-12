@@ -1,0 +1,38 @@
+Model
+ModelMap
+Map
+ModelAndView
+============
+Diferentes formas para llevar objetos mediante clave valor a la vista en este caso en ThymeLeaf.
+
+Que es spring mvc?
+Es lo mismo?
+Pues no
+Es una parte de SpringFramework es un componente del ecosistema de Spring Framework
+Tambien tenemos la inyeccion de dependencias, que si bien se integra con Spring MVC es un componente que parte del CORE
+Dato: Un ORM es una modelo de programacion que permite mapear las estructuras de una base de datos realacional.
+Integracion con ORM trabajar con base de datos mediante JDBC
+WebSocket SpringSecurity y muchos mas
+
+Spring MVC:
+Framework web parte de spring Framework esta basado en la arquitectura Model Vista Controlador.
+Toma como ventaja e incluye como principios la separacion de capas el MVC modelo, vista y controlador. Se integra con el contexto de inyeccion de dependenciaas por que podemos inyectar un componente a travez de su interfaz. La idea es desacoplar e utilizar tipos mas abstractos.
+Usos de POJO que representan los datos de nuestra aplicacion. Estos lo utilizamos basicamente con JPA cuando mapeamos con nuestras tablas 
+
+JPA Es una especificacion, un documento donde se plasman las reglas que debe de cumplir cualquier proveedor que dese desarrollar una implementacion de JPA en ejemplos tenemos Hibernate
+
+Las clases entity son clases de Hibernate son clases POJO
+
+Cuenta con el FrontController o DispatcherServlet
+
+Clara separacion de funciones:
+Llevan a cabo una tarea especifica y pueden ser remplazables sin afectar a los demas. (Controlador, validadores, objeto form, DispatcherServlet, Handler mapping, view resolver, etc)
+
+Que hace un controlador?
+Manejan las solicitudes de los usuarios
+Los controladores proporcionan acceso a la logica de negocio
+Delega la logica de negocio a un conjunto de componentes de servicios
+- Los servicios a su vez acceden a las bases de datos mediante la interdaz DAO o Repository(OBJETO DE ACCESO DE DATOS)
+- Los controladores reciben parametros del usuario (input) y lo convierten en un objeto del modelo, poblando en sus atributos los datos enviados, como resultado de la logica de negocio.
+
+
